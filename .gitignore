@@ -1,0 +1,6 @@
+/.idea/
+/.vscode/
+*.swp
+
+/.hugo_build.lock
+/resources/_gen/
