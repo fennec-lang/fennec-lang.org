@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold mb-2;
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  a {
+    @apply text-blue-600 underline;
+  }
+
+  ul {
+    @apply list-disc pl-6 mb-4;
+  }
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('fonts/pt-serif_regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('fonts/pt-serif_bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('fonts/pt-serif_italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('fonts/pt-serif_bold-italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
