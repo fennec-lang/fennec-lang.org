@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       serif: ['PT Serif', 'sans-serif'],
+      mono: ['IBM Plex Mono', 'monospace'],
     },
     screens: {
       'sm': '640px',
