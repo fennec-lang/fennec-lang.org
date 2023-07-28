@@ -3,7 +3,7 @@ module.exports = {
   content: ["./docs/**/*.html"],
   theme: {
     fontFamily: {
-      sans: ['IBM Plex Sans', 'sans-serif'],
+      sans: ['PT Sans', 'sans-serif'],
       serif: ['PT Serif', 'serif'],
       mono: ['IBM Plex Mono', 'monospace'],
     },
