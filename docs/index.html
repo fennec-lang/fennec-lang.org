@@ -9,14 +9,21 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <script>
-    function updateTheme() {
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
+    function watchDarkModePreference() {
+      const pref = window.matchMedia('(prefers-color-scheme: dark)');
+      updateTheme(pref.matches);
+      pref.addEventListener('change', (e) => {
+        updateTheme(e.matches);
+      });
+    }
+    function updateTheme(prefersDark) {
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)) {
+        document.documentElement.classList.add('dark');
       } else {
-        document.documentElement.classList.remove('dark')
+        document.documentElement.classList.remove('dark');
       }
     }
-    updateTheme();
+    watchDarkModePreference();
   </script>
 </head>
 
